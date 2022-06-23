@@ -1,14 +1,16 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>Module 4 Solution Starter</title>
-  <script src="SpeakHello.js"></script>
-  <script src="SpeakGoodBye.js"></script>
-  <script src="script.js"></script>
-</head>
-<body>
-  <h1>Module 4 Solution </h1>
-  <p> Open the console to see the output</p>
-</body>
-</html>
+(function () {
+
+    var names = ["Yaakov", "Jaya", "Java", "Ravi", "Gowri", "Shiva", "Teja", "Judge", "Alex", "Jimmy"];
+    
+    for (var i = 0; i < names.length; i++) {
+    
+      var firstLetter = names[i].charAt(0).toLowerCase();
+      if (firstLetter === 'j') {
+        byeSpeaker.speak(names[i]);
+      } 
+      else {
+        helloSpeaker.speak(names[i]);
+      }
+    }
+    
+    })();
